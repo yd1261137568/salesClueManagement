@@ -1,0 +1,39 @@
+.optionBar{
+    width: 100%;
+    height: 88px;
+    background: #fff; 
+    box-shadow: 0 1px 10px #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .option{
+        height: 88px;
+        text-align: center;
+        line-height: 88px;
+        font-size: 28px; 
+        color: #999;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        &.choose{
+            color: #59ba53;
+            border-bottom: 4px solid #59ba53;
+        }
+        .num{
+            width: 38px;
+            height: 38px;
+            margin-left: 10px;
+            font-size: 18px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            background: #f69210;
+            color: #fff;
+        }
+        .hidden{
+            display: none;
+        }
+    }
+}

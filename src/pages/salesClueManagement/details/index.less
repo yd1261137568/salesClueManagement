@@ -1,0 +1,127 @@
+.index{
+    width: 100vw;
+    height: 100vh;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    .top{
+        flex: 0 0 80px;
+        line-height: 80px; 
+        padding: 0 30px;
+        color: #333; 
+        font-weight: bold; 
+        border-bottom: 1px solid #e9e9e9; 
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .status{
+            line-height: 40px; 
+            font-weight: normal; 
+            border-bottom: 1px solid #959595; 
+            color: #666;
+        }
+    }
+    .content{
+        flex: 1;
+        overflow: hidden;
+        overflow-y: auto;
+        .main{
+            width: 100%;
+            background: #fff;
+            .item{
+                padding: 0 30px;
+                line-height: 60px;
+                font-size: 28px;
+                display: flex;
+                flex-direction: row;
+                &.bottom{
+                    border-bottom: 1px solid #e9e9e9;
+                }
+                .left{
+                    flex: 0 0 172px; 
+                    text-align: justify; 
+                    text-align-last:justify;
+                    margin-right: 30px;
+                    position: relative;
+                    &:after{
+                        content: ':';
+                        position: absolute;
+                        right: -10px;
+                    }
+                }
+                .right{
+                    flex: 1;
+                    overflow: hidden;
+                    .marginR{
+                        margin-right: 20px;
+                    }
+                    .iconText{
+                        .iconImg{
+                            width: 40px; 
+                            height: 40px; 
+                            vertical-align: middle;
+                        }
+                    }
+                    .imgContent{
+                        display: flex;
+                        flex-direction: row;
+                        .imgLeft{
+                            flex: 0 0 400px;
+                            overflow: hidden;
+                            overflow-x: auto;
+                            .imglist{
+                                width: max-content;
+                                .inlineBlock{
+                                    display: inline-block;
+                                    width: 130px;
+                                    height: 130px;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                        .imgRight{
+                            flex: 1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            .followSituationContent{
+                font-size: 23px;
+                line-height: 38px;
+                border-bottom: 1px solid #e9e9e9;
+                .followSituation{
+                    padding: 10px 60px;
+                    &.hidden{
+                        display: none;
+                    }
+                    .operater{
+                        position: relative;
+                        .operaterIcon{
+                            position: absolute;
+                            left: -30px;
+                        }
+                    }
+                    .remake{
+                        color: #999;
+                    }
+                }
+                .tips{
+                    text-align: center;
+                }
+            }
+            .displaySwitch{
+                line-height: 60px;
+                font-size: 28px;
+                text-align: center;
+            }
+        }
+        .btnContent{
+            padding: 38px 60px 100px 60px;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.listItem{
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #dedede;
+    .top{
+        height: 80px;
+        font-size: 28px;
+        line-height: 80px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            .carNo{
+                font-weight: bold;
+                color: #333;
+                padding: 0 20px;
+            }
+        }
+        .right{
+            .channelSource{
+                color: #24ac90;
+            }
+            .logoIcon{
+                width: 105px;
+                height: 34px;
+                margin-left: 20px;
+                vertical-align: sub;
+            }
+        }
+
+    }
+    .middle{
+        padding: 32px 22px;
+        display: flex;
+        flex-direction: row;
+        .left{
+            flex: 1;
+            overflow: hidden;
+            .list{
+                height: 60px;
+                line-height: 60px;
+                width: 100%;
+                font-size: 28px;
+                color: #6d6d6d;
+                display: flex;
+                flex-direction: row;
+                .label{
+                    flex: 0 0 100px;
+                    text-align: right;
+                    padding-right: 20px;
+                }
+                .content{
+                    flex: 1;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    .jia{
+                        width: 38px;
+                        height: 38px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .right{
+            flex: 0 0 160px;
+            text-align: center;
+            .followStatus{
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    .bottom{
+        padding: 20px;
+        text-align: right;
+        height: 80px;
+        line-height: 80px;
+        font-size: 28px;
+        color: #999;
+        .padding{
+            padding-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "taroApp2",
+	"description": "app",
+	"appid": "wx965ef96c4b869276",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"condition": {}
+}

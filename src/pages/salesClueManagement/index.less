@@ -1,0 +1,108 @@
+.index{
+    width: 100vw;
+    height: 100vh;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    .topBar{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .topOption{
+            flex: 1;
+            &:last-child{
+                text-align: right;
+            }
+            image{
+                width: 60px;
+                height: 60px;
+                margin: 10px 0 0 10px;
+            }
+            .title{
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 28px;
+                line-height: 80px;
+            }
+            .search{
+                margin: 20px 25px 0 0;
+            }
+            .hidden{
+                display:none;
+            }
+        }
+    }
+    .at-search-bar__action{
+        background-color: #59ba53;
+    }
+    .optionBar{
+        width: 100%;
+        height: 88px;
+        background: #fff; 
+        box-shadow: 0 1px 10px #ccc;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .option{
+            height: 83px;
+            text-align: center;
+            line-height: 83px;
+            font-size: 28px; 
+            color: #999;
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            &.choose{
+                color: #59ba53;
+                border-bottom: 5px solid #59ba53;
+            }
+            .num{
+                width: 38px;
+                height: 38px;
+                margin-left: 10px;
+                font-size: 18px;
+                line-height: 38px;
+                text-align: center;
+                border-radius: 50%;
+                background: #f69210;
+                color: #fff;
+            }
+            .hidden{
+                display: none;
+            }
+        }
+    }
+    .listContent{
+        flex: 1;
+        overflow: hidden;
+        overflow-y: auto;
+        .hidden{
+            display: none;
+        }
+        .listDiv{
+            width: 750px;
+            min-height: 110%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .loading{
+            width: 100%;
+            text-align: center;
+            font-size: 32px;
+            display: none;
+            .loadingGIF{
+                width: 50px;
+                height: 50px;
+                vertical-align: middle;
+            }
+        }
+        .hidden{
+            display: none;
+        }
+    }
+}

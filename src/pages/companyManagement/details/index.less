@@ -1,0 +1,216 @@
+.index{
+    width: 100vw;
+    height: 100vh;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    .center{
+        flex: 1;
+        overflow: hidden;
+        overflow-y: auto;
+        .card{
+            width: 680px;
+            margin: auto;
+            position: relative;
+            .cardBG{
+                width: 100%;
+                height: 368px;
+            }
+            .basemsg{
+                position: absolute;
+                left: 215px;
+                top: 55px;
+                color: #fff;
+                .title{
+                    width: 400px; 
+                    font-size: 28px; 
+                    font-weight: 600; 
+                    padding-left: 35px;
+                    overflow: hidden; 
+                    text-overflow: ellipsis; 
+                    white-space: nowrap;
+                }
+                .location{
+                    font-size: 22px;
+                    height: 30px;
+                    line-height: 30px;
+                }
+                .phone{
+                    font-size: 22px;
+                    padding-left: 5px;
+                }
+                .paddingLeft{
+                    padding-left: 10px;
+                }
+            }
+            .moneymsg{
+                position: absolute; 
+                bottom: 40px; 
+                width: 100%; 
+                display: flex; 
+                flex-direction: row; 
+                justify-content: space-around;
+                .moneyItem{
+                    text-align: center;
+                    color: #ffffff;
+                    .money{
+                        font-size: 20px; 
+                        font-weight: 500;
+                    }
+                    .moneyTitle{
+                        font-size: 22px; 
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .optionBar{
+            width: 100%; 
+            height: 80px; 
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+            .option{
+                width: 75px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 30px;
+                text-align: center; 
+                color: #666666;
+                &.onChoose{
+                    color: #000000; 
+                    border-bottom: 5px solid #000000; 
+                    font-weight: 700;
+                }
+            }
+        }
+        .hidden{
+            display: none;
+        }
+        .relationContent{
+            padding:0 35px 130px 35px;
+            .contentTitle{
+                width: 100%; 
+                height: 90px; 
+                display: flex; 
+                flex-direction: row; 
+                justify-content: space-between; 
+                align-items: center;
+                .contentT{
+                    font-size: 28px; 
+                    font-weight: 900;
+                } 
+            }
+            .listContent{
+                width: 100%; 
+                border-radius: 20px; 
+                box-shadow: 0 0 15px #ccc; 
+                background: #fff;
+                overflow: hidden;
+                .other{
+                    width: 100%;
+                    height: 85px; 
+                    line-height: 85px; 
+                    text-align: center; 
+                    font-size: 24px; 
+                    color: #000;
+                }
+                .noData{
+                    width: 100%;
+                    font-size: 28px;
+                    line-height: 100px;
+                    text-align: center;
+                    color: #666;
+                }
+            }
+            .footOption{
+                width: 100%;
+                height: 100px;
+                background: #ffffff;
+                z-index: 100;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .footItem{
+                    flex: 1;
+                    text-align: center;
+                    line-height: 100px;
+                    font-size: 35px;
+                    color: #666;
+                    border: 1px solid #e9e9e9;
+                }
+            }
+        }
+        .messageContent{
+            font-size: 28px;
+            .accountStatus{
+                margin-bottom: 10px; 
+                line-height: 120px; 
+                text-align: center; 
+                color: #13ae67; 
+                background: #fff;
+            }
+            .repairDetail{
+                position: relative; 
+                margin-bottom: 10px; 
+                background: #fff;
+                .item{
+                    line-height: 80px; 
+                    border-bottom: 1px solid #e9e9e9;
+                    padding: 0 20px;
+                    display: flex;
+                    flex-direction: row;
+                    &:last-child{
+                        border-bottom: 0;
+                    }
+                    .label{
+                        flex: 0 0 240px; 
+                        color: #666;
+                    }
+                    .text{
+                        flex: 1;
+                        color: #999; 
+                        display: flex;
+                        .input{
+                            border: 1px solid #ccc;
+                            margin-top: 12px;
+                            color: #000;
+                        }
+                        .radioSize{
+                            transform: scale(0.6);
+                        }
+                        .marginL{
+                            margin-left: 50px;
+                        }
+                        .imgContent{
+                            width: 130px; 
+                            height: 130px; 
+                            padding: 5px; 
+                            margin: 5px;
+                            background: #fff; 
+                            border: 1px solid #ccc;
+                            .img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+                .audited{
+                    position: absolute; 
+                    top: 40px; 
+                    right: 40px; 
+                    width: 160px;
+                    height: 126px;
+                }
+            }
+            .btnContent{
+                padding: 30px 60px;
+            }
+        }
+    }
+}
